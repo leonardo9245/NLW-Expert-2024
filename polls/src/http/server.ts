@@ -5,6 +5,7 @@ import { createPoll } from "./routes/create-poll";
 import { getPoll } from "./routes/get-poll";
 import { voteOnPoll } from "./routes/vote-on-poll";
 import { pollResults } from "./ws/poll-results";
+import { DeletPoll } from "./routes/delete-poll";
 
 
 
@@ -20,6 +21,7 @@ app.register(websocket)
 app.register(createPoll)
 app.register(getPoll)
 app.register(voteOnPoll)
+app.register(DeletPoll)
 
 app.register(pollResults)
 
